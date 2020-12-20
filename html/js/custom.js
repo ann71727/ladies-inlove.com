@@ -60,10 +60,17 @@ $(function() {
 $(function() {
   $(document).ready(function() {
     $('select:not(.ignore)').niceSelect();      
-    FastClick.attach(document.body);
+    // FastClick.attach(document.body);
   });   
 });
 
+
+
+$(function() {
+    $("#bars").click(function(){
+      $(".sidebar").slideToggle("slow");
+    });
+});
 /*!
  * 下拉
  */
@@ -109,25 +116,8 @@ $(function(){
  */
 $(function () {
   $('.example').beefup({
-    scroll: true,
+    scroll: false,
     scrollOffset: -10,
-    breakpoints: [
-      {
-        breakpoint: 768,
-        settings: {
-          animation: 'fade',
-          scroll: false
-        }
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          animation: 'slide',
-          openSpeed: 800,
-          openSingle: true
-        }
-      }
-    ]
   });
 })
 
@@ -232,36 +222,38 @@ $(".bookmark").click(function(){
   $(this).toggleClass("active");
 });
 
-jQuery('.gallery').eq(0).initGallery({
+if($.fn.initGallery){
+  jQuery('.gallery').eq(0).initGallery({
+      nav: ['<i class="material-icons">keyboard_arrow_left</i>', '<i class="material-icons">keyboard_arrow_right</i>'],
+      close: "<i class='material-icons'>close</i>",
+      aspectRatio: 3/2,
+      dots: false,
+      showNavIfOneItem: false,
+      showNav: true,
+      arrows: true,
+      loop: false,
+      autoplay: false,
+      transition: "slide",
+  });
+
+
+
+  jQuery('.gallery').eq(1).initGallery({
     nav: ['<i class="material-icons">keyboard_arrow_left</i>', '<i class="material-icons">keyboard_arrow_right</i>'],
     close: "<i class='material-icons'>close</i>",
-    aspectRatio: 3/2,
-    dots: false,
-    showNavIfOneItem: false,
-    showNav: true,
-    arrows: true,
-    loop: false,
-    autoplay: false,
-    transition: "slide",
-
-});
-
-jQuery('.gallery').eq(1).initGallery({
-    nav: ['<i class="material-icons">keyboard_arrow_left</i>', '<i class="material-icons">keyboard_arrow_right</i>'],
-    close: "<i class='material-icons'>close</i>",
-    aspectRatio: 3/2,
+    aspectRatio: 3 / 2,
     showDots: true,
     showNavIfOneItem: false,
     showNav: false,
     arrows: true,
     transition: "slide",
     transitionTime: 700,
-});
+  });
 
-jQuery('.gallery').eq(2).initGallery({
+  jQuery('.gallery').eq(2).initGallery({
     nav: ['<i class="material-icons">keyboard_arrow_left</i>', '<i class="material-icons">keyboard_arrow_right</i>'],
     close: "<i class='material-icons'>close</i>",
-    aspectRatio: 3/2,
+    aspectRatio: 3 / 2,
     showDots: true,
     showNavIfOneItem: false,
     showNav: false,
@@ -269,15 +261,15 @@ jQuery('.gallery').eq(2).initGallery({
     transition: "fade",
     fullScreen: false,
     autoplay: false,
-});
+  });
 
-jQuery('.gallery').eq(3).initGallery({
-    aspectRatio: 3/2,
+  jQuery('.gallery').eq(3).initGallery({
+    aspectRatio: 3 / 2,
     dots: true,
     showDotsIfOneItem: false,
     showNav: true,
-});
+  });
 
-// jQuery('.gallery').trigger('change', 'prev');
+  // jQuery('.gallery').trigger('change', 'prev');
 
-
+};

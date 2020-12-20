@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <title>寵愛女人購物平台</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--jSide Menu CSS-->
+  <link rel="stylesheet" href="css/jside-menu.css">
+  <link rel="stylesheet" href="css/jside-skins.css">
+  <!--Material Design Iconic Font-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- 載入CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/menuzord.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/nice-select.css">
+  <link rel="stylesheet" href="css/jquery.beefup.css">
+  <!-- Owl Stylesheets -->
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/duDatepicker.min.css">
+</head>
+
+<body>
+  <!-- wrapper
+		============================================= -->
+  <div class="wrapper member-centre">
+    <!-- header
+			============================================= -->
+    <header>
+      <!-- navbar
+				============================================= -->
+      <div id="menuzord">
+        <!-- Image and text -->
+        <nav class="navbar navbar-dark bg-primary fixed-top shadow py-0">
+          <div class="container-fluid">
+            <a class="navbar-brand py-2" href="#">
+              <img src="images/logo-icon.svg" alt="" width="40" height="40" class="d-inline-block">
+              <h4 class="d-inline-block pr-2">Vendor Centre</h4><small>賣家中心</small>
+            </a>
+            <div class="navbar-text py-0">
+              <a href="#"><img src="images/photo.jpg" height="30" class="border border-light border-2 rounded-circle mr-2">testuser01<img src="images/diamond.png" height="15"></a>
+              <a href="#" class="border-left py-4 ml-3 pl-3"><i class="far fa-question-circle"></i> 賣家幫助中心</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <a href="#" id="bars" class="btn btn-outline-light btn-sm"><i class="fas fa-bars"></i></a>
+    </header>
+
+    <div class="container-fluid fill-height bg-light pl-0 pr-0 d-flex align-items-stretch ">
+
+      <div class="sidebar bg-white shadow px-5">
+        <div class="pt-4">
+          <article class="beefup">
+            <h4 class="beefup__head noafte">
+              <a href="seller-setup.html">賣家設定</a>
+            </h4>
+          </article>
+          <article class="beefup example is-open">
+            <h4 class="beefup__head">
+              訂單管理
+            </h4>
+            <div class="beefup__body">
+              <a href="seller-order.html">全部訂單</a>
+              <a href="#">尚未付款</a>
+              <a href="#">待出貨</a>
+              <a href="#">已完成</a>
+            </div>
+          </article>
+          <article class="beefup example">
+            <h4 class="beefup__head">
+              上架商品
+            </h4>
+            <div class="beefup__body">
+              <a href="seller-products-list.html">我的商品</a>
+              <a href="seller-up.html">新增商品</a>
+            </div>
+          </article>
+          <article class="beefup">
+            <h4 class="beefup__head noafte">
+              <a href="#">物流設定</a>
+            </h4>
+          </article>
+          <article class="beefup">
+            <h4 class="beefup__head noafte">
+              <a href="#">客服管理</a>
+            </h4>
+          </article>
+        </div>
+      </div>
+      <div class="main">
+        <div class="m-3 p-5 bg-white shadow">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">全部訂單（2）</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">尚未付款 (1)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">待出貨 (1)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">已完成 (1)</a>
+            </li>
+          </ul>
+          <hr class="my-0">
+          <div class="row pt-4 justify-content-between">
+            <div class="col-lg-5">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control rounded-0" placeholder="搜尋訂單" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary rounded-0" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group row ml-0 mr-0">
+                <label for="time" class="col-sm-3 col-form-label pl-0 pr-0">訂單成立時間</label>
+                <div class="col-sm-9 pl-0 pr-0 datepicker">
+                  <input type="text" id="datepicker" class="form-control rounded-0">
+                  <textarea id="loggerTxt" rows="10" disabled style="display: none;"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table-responsive mb-4">
+            <table class="table mb-0">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">訂單編號</th>
+                  <th scope="col">訂購日期</th>
+                  <th scope="col">訂單金額</th>
+                  <th scope="col">付款狀態</th>
+                  <th scope="col">付款方式</th>
+                  <th scope="col">配送方式</th>
+                  <th scope="col">訂單狀態</th>
+                  <th scope="col">發票狀態 / 號碼</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="seller-order.html">#A69922</a></td>
+                  <td>2020 / 10 / 20</td>
+                  <td>46,000</td>
+                  <td>已付款</td>
+                  <td>刷卡分期 6 期</td>
+                  <td>宅配</td>
+                  <td>配送完成</td>
+                  <td>已開立 <a href="#">檢視發票</a></td>
+                </tr>
+                <tr>
+                  <td><a href="seller-order.html">#A69953</a></td>
+                  <td>2020 / 11 / 05</td>
+                  <td>28,000</td>
+                  <td>尚未付款</td>
+                  <td>ATM 轉帳</td>
+                  <td>7-11 取貨</td>
+                  <td>待出貨</td>
+                  <td>未開立 N / A</td>
+                </tr>
+                <tr>
+                  <td><a href="seller-order.html">#A69953</a></td>
+                  <td>2020 / 11 / 05</td>
+                  <td>28,000</td>
+                  <td>尚未付款</td>
+                  <td>ATM 轉帳</td>
+                  <td>7-11 取貨</td>
+                  <td>待出貨</td>
+                  <td>未開立 N / A</td>
+                </tr>
+                <tr>
+                  <td><a href="seller-order.html">#A69953</a></td>
+                  <td>2020 / 11 / 05</td>
+                  <td>28,000</td>
+                  <td>尚未付款</td>
+                  <td>ATM 轉帳</td>
+                  <td>7-11 取貨</td>
+                  <td>待出貨</td>
+                  <td>未開立 N / A</td>
+                </tr>
+                <tr>
+                  <td><a href="seller-order.html">#A69953</a></td>
+                  <td>2020 / 11 / 05</td>
+                  <td>28,000</td>
+                  <td>尚未付款</td>
+                  <td>ATM 轉帳</td>
+                  <td>7-11 取貨</td>
+                  <td>待出貨</td>
+                  <td>未開立 N / A</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center py-4">
+              <li class="page-item">
+                <a class="page-link arrow" href="#" aria-label="Previous">
+                  <span aria-hidden="true">‹</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link arrow" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">
+                  1
+                  <span class="sr-only">(current)</span>
+                </span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link arrow" href="#" aria-label="Next">
+                  <span aria-hidden="true">›</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link arrow" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- goToTop
+			============================================= -->
+    <div id="goToTop"><a href="#" class="shadow-sm"><i class="fa fa-chevron-up"></i><span>TOP</span></a></div>
+    <!-- goToTop -->
+
+    <a href="#" class="chat">Chat</a>
+
+  </div>
+</body>
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/menuzord.js"></script>
+<script type="text/javascript" src="owlcarousel/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="js/jquery.beefup.min.js"></script>
+<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+<script type="text/javascript" src="js/jquery.jside.menu.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/duDatepicker.min.js"></script>
+<script type="text/javascript">
+  function log(message) {
+    document.querySelector('#loggerTxt').value = message
+  }
+
+  window.onload = function () {
+    document.querySelector('#datepicker').addEventListener('datechanged', function (e) {
+      console.log('New date', e.data, this.value)
+    })
+
+    duDatepicker('#datepicker', {
+      format: 'mmmm d, yyyy', range: true, clearBtn: true,
+      // disabledDays: ['Sat', 'Sun'],
+      events: {
+        dateChanged: function (data) {
+          log('From: ' + data.dateFrom + '\nTo: ' + data.dateTo)
+        },
+        onRangeFormat: function (from, to) {
+          var fromFormat = 'mmmm d, yyyy', toFormat = 'mmmm d, yyyy';
+
+          if (from.getMonth() === to.getMonth() && from.getFullYear() === to.getFullYear()) {
+            fromFormat = 'mmmm d'
+            toFormat = 'd, yyyy'
+          } else if (from.getFullYear() === to.getFullYear()) {
+            fromFormat = 'mmmm d'
+            toFormat = 'mmmm d, yyyy'
+          }
+
+          return from.getTime() === to.getTime() ?
+            this.formatDate(from, 'mmmm d, yyyy') :
+            [this.formatDate(from, fromFormat), this.formatDate(to, toFormat)].join('-');
+        }
+      }
+    })
+
+  }
+</script>
+
+</html>
