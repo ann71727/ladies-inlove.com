@@ -619,6 +619,10 @@ button {
     color: white;
 }
 
+.slogan a.dropdown-item {
+    color: black;
+}
+
 .slogan a:hover {
     opacity: .8;
 }
