@@ -273,3 +273,21 @@ if($.fn.initGallery){
   // jQuery('.gallery').trigger('change', 'prev');
 
 };
+
+
+
+/**
+ * 結帳運送、付款方式
+ */
+$('.v-checkout-info-tab').each(function( index , ele ) {
+  $target = $(this).data('target')
+  $($target).hide()
+  $(this).find('input[type=radio]').on('click', function() {
+    $target = $(this).closest('.v-checkout-info-tab').data('target')
+    $trigger = $(this).data('trigger')
+    $($target).hide()
+    $($trigger).fadeIn(250);
+  });  
+});
+
+

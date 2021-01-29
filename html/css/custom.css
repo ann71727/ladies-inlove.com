@@ -2212,7 +2212,7 @@ form .table {
     border-color: #ced4da !important;
 }
 
-.member-centre .nice-select {
+.nice-select {
     height: 38px !important;
     line-height: 36px !important;
 }
@@ -2240,7 +2240,7 @@ form .table {
     padding-left: 30px;
 }
 
-.member-centre .nice-select.gray {
+.nice-select.gray {
     background-color: #F6F6F6;
 }
 
@@ -2258,16 +2258,16 @@ VECTOR
     border-color: #b5b5b6;
 } 
 */
-.member-centre .pagination li {
+.pagination li {
     margin: 0 2.5px;
 }
 
-.member-centre .pagination .form-control {
+.pagination .form-control {
     width: 35px;
     height: 25px;
 }
 
-.member-centre .custom-switch .custom-control-label {
+.custom-switch .custom-control-label {
     transform: scale(1.4);
     -ms-transform: scale(1.4);
     -webkit-transform: scale(1.4);
@@ -2275,12 +2275,12 @@ VECTOR
     margin-top: -.25rem;
 }
 
-.member-centre .custom-switch .custom-control-label::before {
+.custom-switch .custom-control-label::before {
     background-color: #dcdddd;
     border: #dcdddd solid 1px;
 }
 
-.member-centre .custom-switch .custom-control-input:checked~.custom-control-label::before {
+.custom-switch .custom-control-input:checked~.custom-control-label::before {
     color: #86b350;
     border-color: #86b350;
     background-color: #86b350;
@@ -3093,6 +3093,10 @@ VECTOR
     margin-left: -20px;
     margin-top: -20px;
 }
+
+
+
+
 
 
 
