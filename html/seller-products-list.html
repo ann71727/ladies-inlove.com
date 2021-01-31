@@ -27,7 +27,7 @@
 <body>
     <!-- wrapper
 		============================================= -->
-    <div class="wrapper member-centre">
+    <div class="wrapper seller-center">
         <!-- header
 			============================================= -->
         <header>
@@ -51,169 +51,174 @@
             <a href="#" id="bars" class="btn btn-outline-light btn-sm"><i class="fas fa-bars"></i></a>
         </header>
 
-        <div class="container-fluid bg-light pl-0 pr-0 d-flex align-items-stretch">
+        <div class="container-fluid v-page-wrapper">
+            <div class="row">
+                <div class="col-md-4 col-lg-3 py-3 d-none d-lg-flex">
+                    <div class="sidebar bg-white shadow px-5">
+                        <div class="pt-4">
+                            <article class="beefup">
+                                <h4 class="beefup__head noafte">
+                                    <a href="seller-setup.html">賣家設定</a>
+                                </h4>
+                            </article>
+                            <article class="beefup example">
+                                <h4 class="beefup__head">
+                                    訂單管理
+                                </h4>
+                                <div class="beefup__body">
+                                    <a href="seller-order.html">全部訂單</a>
+                                    <a href="#">尚未付款</a>
+                                    <a href="#">待出貨</a>
+                                    <a href="#">已完成</a>
+                                </div>
+                            </article>
+                            <article class="beefup example is-open">
+                                <h4 class="beefup__head">
+                                    上架商品
+                                </h4>
+                                <div class="beefup__body">
+                                    <a href="seller-products-list.html">我的商品</a>
+                                    <a href="seller-up.html">新增商品</a>
+                                </div>
+                            </article>
+                            <article class="beefup">
+                                <h4 class="beefup__head noafte">
+                                    <a href="./seller-options.html">賣家設定</a>
+                                </h4>
+                            </article>
 
-            <div class="sidebar bg-white shadow px-5">
-                <div class="pt-4">
-                    <article class="beefup">
-                        <h4 class="beefup__head noafte">
-                            <a href="seller-setup.html">賣家設定</a>
-                        </h4>
-                    </article>
-                    <article class="beefup example">
-                        <h4 class="beefup__head">
-                            訂單管理
-                        </h4>
-                        <div class="beefup__body">
-                            <a href="seller-order.html">全部訂單</a>
-                            <a href="#">尚未付款</a>
-                            <a href="#">待出貨</a>
-                            <a href="#">已完成</a>
                         </div>
-                    </article>
-                    <article class="beefup example is-open">
-                        <h4 class="beefup__head">
-                            上架商品
-                        </h4>
-                        <div class="beefup__body">
-                            <a href="seller-products-list.html">我的商品</a>
-                            <a href="seller-up.html">新增商品</a>
-                        </div>
-                    </article>
-                    <article class="beefup">
-                        <h4 class="beefup__head noafte">
-                            <a href="./seller-options.html">賣家設定</a>
-                        </h4>
-                    </article>
-
+                    </div>
                 </div>
-            </div>
-            <div class="main">
-                <div class="m-3 p-5 bg-white shadow">
-                    <h6>我的商品</h6>
-                    <hr>
-                    <div class="row row-sm d-flex v-table-control-wrap">
-                        <div class="col-6 col-lg-2 col-md-6 align-self-start">
-                            <button href="#" class="btn btn-success rounded-0 d-block">＋ 新增商品</button>
-                        </div>
-                        <div class="col-lg-4 col-md-12 text-left flex-column align-self-start">
-                            <select class="wide gray w-75">
-                                <option value="0">篩選分類</option>
-                                <option value="1">分類01</option>
-                                <option value="2">分類02</option>
-                            </select>
-                            <a href="#" class="btn btn-outline-secondary rounded-0 d-block px-0 w-auto">篩選</a>
-                        </div>
-                        <div class="col-lg-5 align-self-end ml-auto">
-                            <div class="input-group mb-3">
-                                <select>
-                                    <option value="0">分類</option>
-                                    <option value="1">分類</option>
-                                    <option value="2">分類</option>
-                                </select>
-                                <input type="text" class="form-control rounded-0 border-left-0" placeholder="請輸入商品名稱" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary rounded-0" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                <div class="col-md-12 col-lg-9 p-3">
+                    <div class="main">
+                        <div class="m-3 p-5 bg-white shadow">
+                            <h6>我的商品</h6>
+                            <hr>
+                            <div class="row row-sm d-flex v-table-control-wrap">
+                                <div class="col-6 col-lg-2 col-md-6 align-self-start">
+                                    <button href="#" class="btn btn-success rounded-0 d-block">＋ 新增商品</button>
+                                </div>
+                                <div class="col-lg-4 col-md-12 text-left flex-column align-self-start">
+                                    <select class="wide gray w-75">
+                                        <option value="0">篩選分類</option>
+                                        <option value="1">分類01</option>
+                                        <option value="2">分類02</option>
+                                    </select>
+                                    <a href="#" class="btn btn-outline-secondary rounded-0 d-block px-0 w-auto">篩選</a>
+                                </div>
+                                <div class="col-lg-5 align-self-end ml-auto">
+                                    <div class="input-group mb-3">
+                                        <select>
+                                            <option value="0">分類</option>
+                                            <option value="1">分類</option>
+                                            <option value="2">分類</option>
+                                        </select>
+                                        <input type="text" class="form-control rounded-0 border-left-0" placeholder="請輸入商品名稱" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary rounded-0" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="table-responsive v-table-rwd">
-                        <table class="table mb-0">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox">
-                                            <label class="custom-control-label" for="checkbox"></label>
+                            <div class="table-responsive v-table-rwd">
+                                <table class="table mb-0">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox">
+                                                    <label class="custom-control-label" for="checkbox"></label>
+                                                </div>
+                                            </th>
+                                            <th scope="col">商品名稱</th>
+                                            <th scope="col">商品 ID</th>
+                                            <th scope="col">商品類別</th>
+                                            <th scope="col">價格<i class="fas fa-sort ml-1"></i></th>
+                                            <th scope="col">數量<i class="fas fa-sort ml-1"></i></th>
+                                            <th scope="col">商品狀態</th>
+                                            <th scope="col">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox1">
+                                                    <label class="custom-control-label" for="checkbox1"></label>
+                                                </div>
+                                            </td>
+                                            <td><img src="images/product-1.jpg" width="35" height="35" class="border mr-2">Product Name</td>
+                                            <td>Ｌ20201102A</td>
+                                            <td>直購區 <br>
+                                                > 精品包包 > Louis Vitton</td>
+                                            <td>＄ 78,800</td>
+                                            <td>1</td>
+                                            <td>已上架</td>
+                                            <td><a href="#" class="d-block">刪除</a><a href="#" class="d-block">下架商品</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox2">
+                                                    <label class="custom-control-label" for="checkbox2"></label>
+                                                </div>
+                                            </td>
+                                            <td><img src="images/product-2.jpg" width="35" height="35" class="border mr-2">Product Name</td>
+                                            <td>Ｌ20201102A</td>
+                                            <td>直購區 <br>
+                                                > 精品包包 > Louis Vitton</td>
+                                            <td>＄ 65,800</td>
+                                            <td>1</td>
+                                            <td>已下架</td>
+                                            <td><a href="#" class="d-block">刪除</a><a href="#" class="d-block">重新上架</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row row-sm mb-3 px-0 v-table-control-wrap">
+                                <div class="col-12 col-md-12">
+                                    <div class="row row-sm mt-3 d-flex justify-content-between">
+                                        <div class="col-lg-4 col-md-12 text-left flex-column align-self-start">
+                                            <select class="wide gray w-50">
+                                                <option value="">批量工具</option>
+                                                <option value="1">刪除</option>
+                                                <option value="2">封存</option>
+                                            </select>
+                                            <button href="#" class="btn btn-outline-secondary rounded-0 d-block w-auto">執行</button>
                                         </div>
-                                    </th>
-                                    <th scope="col">商品名稱</th>
-                                    <th scope="col">商品 ID</th>
-                                    <th scope="col">商品類別</th>
-                                    <th scope="col">價格<i class="fas fa-sort ml-1"></i></th>
-                                    <th scope="col">數量<i class="fas fa-sort ml-1"></i></th>
-                                    <th scope="col">商品狀態</th>
-                                    <th scope="col">操作</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox1">
-                                            <label class="custom-control-label" for="checkbox1"></label>
+                                        <div class="col-lg-7 col-md-12 d-flex flex-row justify-content-end v-pagination-wrap">
+                                            <div class="d-inline">
+                                                商品數量： <span class="text-success">2 / Ｕnlimited</span>
+                                            </div>
+                                            <div class="d-inline">
+                                                <ul class="pagination pagination-sm d-flex ">
+                                                    <li class="page-item">
+                                                        <a class="page-link arrow py-0" href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">‹</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link arrow py-0" href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">«</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item active" aria-current="page">
+                                                        第<input type="text" class="form-control rounded-0 d-inline mx-1" id="page" value="1">頁 ， 共 1 頁
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link arrow" href="#" aria-label="Next">
+                                                            <span aria-hidden="true">›</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link arrow" href="#" aria-label="Next">
+                                                            <span aria-hidden="true">»</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </td>
-                                    <td><img src="images/product-1.jpg" width="35" height="35" class="border mr-2">Product Name</td>
-                                    <td>Ｌ20201102A</td>
-                                    <td>直購區 <br>
-                                        > 精品包包 > Louis Vitton</td>
-                                    <td>＄ 78,800</td>
-                                    <td>1</td>
-                                    <td>已上架</td>
-                                    <td><a href="#" class="d-block">刪除</a><a href="#" class="d-block">下架商品</a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox2">
-                                            <label class="custom-control-label" for="checkbox2"></label>
-                                        </div>
-                                    </td>
-                                    <td><img src="images/product-2.jpg" width="35" height="35" class="border mr-2">Product Name</td>
-                                    <td>Ｌ20201102A</td>
-                                    <td>直購區 <br>
-                                        > 精品包包 > Louis Vitton</td>
-                                    <td>＄ 65,800</td>
-                                    <td>1</td>
-                                    <td>已下架</td>
-                                    <td><a href="#" class="d-block">刪除</a><a href="#" class="d-block">重新上架</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="row row-sm mb-3 px-0 v-table-control-wrap">
-                        <div class="col-12 col-md-12">
-                            <div class="row row-sm mt-3 d-flex justify-content-between">
-                                <div class="col-lg-4 col-md-12 text-left flex-column align-self-start">
-                                    <select class="wide gray w-50">
-                                        <option value="">批量工具</option>
-                                        <option value="1">刪除</option>
-                                        <option value="2">封存</option>
-                                    </select>
-                                    <button href="#" class="btn btn-outline-secondary rounded-0 d-block w-auto">執行</button>
-                                </div>
-                                <div class="col-lg-7 col-md-12 d-flex flex-row justify-content-end v-pagination-wrap">
-                                    <div class="d-inline">
-                                        商品數量： <span class="text-success">2 / Ｕnlimited</span>
-                                    </div>
-                                    <div class="d-inline">
-                                        <ul class="pagination pagination-sm d-flex ">
-                                            <li class="page-item">
-                                                <a class="page-link arrow py-0" href="#" aria-label="Previous">
-                                                    <span aria-hidden="true">‹</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link arrow py-0" href="#" aria-label="Previous">
-                                                    <span aria-hidden="true">«</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item active" aria-current="page">
-                                                第<input type="text" class="form-control rounded-0 d-inline mx-1" id="page" value="1">頁 ， 共 1 頁
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link arrow" href="#" aria-label="Next">
-                                                    <span aria-hidden="true">›</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link arrow" href="#" aria-label="Next">
-                                                    <span aria-hidden="true">»</span>
-                                                </a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>

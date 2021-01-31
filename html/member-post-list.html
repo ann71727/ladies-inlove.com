@@ -26,7 +26,7 @@
 <body>
 	<!-- wrapper
 		============================================= -->
-	<div class="wrapper">
+	<div class="wrapper member-center">
 
 		<!-- header 手機
 			============================================= -->
@@ -167,10 +167,10 @@
 						<button type="button" class="btn btn-secondary dropdown-toggle border-0 rounded-0" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
 						</button>
 						<div class="dropdown-menu dropdown-menu-lg-right rounded-0 m-0 p-0">
-								<a href="page.html" class="dropdown-item border-bottom py-2" type="button">如何刊登商品</a>
-								<a href="page.html" class="dropdown-item border-bottom py-2" type="button">會員規範</a>
-								<a href="page.html" class="dropdown-item border-bottom py-2" type="button">認證賣家查詢</a>
-								<a href="contact.html" class="dropdown-item border-bottom py-2" type="button">聯繫客服</a>
+							<a href="page.html" class="dropdown-item border-bottom py-2" type="button">如何刊登商品</a>
+							<a href="page.html" class="dropdown-item border-bottom py-2" type="button">會員規範</a>
+							<a href="page.html" class="dropdown-item border-bottom py-2" type="button">認證賣家查詢</a>
+							<a href="contact.html" class="dropdown-item border-bottom py-2" type="button">聯繫客服</a>
 						</div>
 					</div>
 				</div>
@@ -451,21 +451,56 @@
 			</div>
 		</header>
 
-		<div class="container overflow-hidden py-4">
+		<div class="container v-page-wrapper">
 			<div class="py-3">
 				<h3 class="text-primary d-inline mr-2">Member Centre</h3>
 				<h6 class="d-inline mr-2">會員中心</h6>
 			</div>
 			<hr class="py-1">
-			<div class="main">
-
-                    <h6>文章版面，流行報導、開箱秀、許願池 </h6>
-                    <hr>
-                    <div class="row row-sm d-flex v-table-control-wrap">
-                        <div class="col-6 col-lg-2 col-md-6 align-self-start">
-                            <a href="member-post.html" class="btn btn-success rounded-0 d-block">新增文章</a>
+			<div class="row">
+				<div class="col-md-4 col-lg-3 p-3">
+					<div class="sidebar mt-1">
+						<div class="row align-items-center mb-2">
+							<div class="col-4">
+								<img src="images/photo.jpg" class="w-100 rounded-pill">
+							</div>
+							<div class="col-8">
+								<h6 class="mb-0">賣家名稱 / 暱稱</h6>
+								<p class="mb-0">testuser01 </p>
+								<p class="mb-0"><img src="images/diamond.png" height="15"><a href="seller-program.html" class="text-success ml-2">升級方案</a></p>
+							</div>
 						</div>
-						<!-- 預留分類篩選
+						<h6 class="border-bottom mb-0"><a href="member-data.html" class="d-block p-3">帳號管理中心</a></h6>
+						<h6 class="border-bottom mb-0"><a href="member-favorites1.html" class="d-block p-3">收藏夾</a></h6>
+						<h6 class="border-bottom mb-0"><a href="member-data.html" class="d-block p-3">文章管理</a></h6>
+						<ul class="ul-style1 border-bottom py-2">
+							<li><a href="member-post-list.html" class="d-block px-3 py-1">許願池</a></li>
+							<li><a href="member-post-list.html" class="d-block px-3 py-1">開箱秀</a></li>
+							<li><a href="member-post-list.html" class="d-block px-3 py-1">流行報導</a></li>
+						</ul>
+						<h6 class="border-bottom mb-0"><a href="member-order-list.html" class="d-block p-3">訂單追蹤</a></h6>
+						<h6 class="border-bottom mb-0"><a href="member-reward.html" class="d-block p-3">VIP會員專享</a></h6>
+						<div class="border-bottom p-3">
+							<p class="text-black-50">尚未開通功能</p>
+							<a href="vip.html" class="btn btn-outline-secondary btn-sm">成為VIP會員</a>
+						</div>
+						<h6 class="border-bottom mb-0"><a href="#" class="d-block p-3">賣家管理中心</a></h6>
+						<div class="p-3">
+							<p class="text-black-50">尚未開通功能</p>
+							<a href="#" class="btn btn-primary btn-sm">成為VIP會員</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8 col-lg-9 p-3">
+					<div class="main">
+
+						<h6>文章版面，流行報導、開箱秀、許願池 </h6>
+						<hr>
+						<div class="row row-sm d-flex v-table-control-wrap">
+							<div class="col-6 col-lg-2 col-md-6 align-self-start">
+								<a href="member-post.html" class="btn btn-success rounded-0 d-block">新增文章</a>
+							</div>
+							<!-- 預留分類篩選
                         <div class="col-lg-4 col-md-12 text-left flex-column align-self-start">
                             <select class="wide gray w-75">
                                 <option value="0">篩選分類</option>
@@ -475,203 +510,176 @@
                             <a href="#" class="btn btn-outline-secondary rounded-0 d-block px-0 w-auto">篩選</a>
 						</div>
 						-->
-                        <div class="col-lg-5 align-self-end ml-auto">
-                            <div class="input-group mb-3">
-                                <select>
-                                    <option value="0">分類</option>
-                                    <option value="1">分類</option>
-                                    <option value="2">分類</option>
-                                </select>
-                                <input type="text" class="form-control rounded-0 border-left-0" placeholder="請輸入文章標題" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary rounded-0" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-responsive v-table-rwd">
-                        <table class="table mb-0">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox">
-                                            <label class="custom-control-label" for="checkbox"></label>
-                                        </div>
-                                    </th>
-									<th scope="col">圖片</th>
-									<th scope="col">標題</th>
-                                    <th scope="col">發佈時間</th>
-                                    <th scope="col">操作</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox1">
-                                            <label class="custom-control-label" for="checkbox1"></label>
-                                        </div>
-                                    </td>
-                                    <td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
-                                    <td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
-                                    <td>2021-01-29</td>
-                                    <td><a href="member-post-list.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
-								</tr>
-								<tr>
-                                    <td>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox1">
-                                            <label class="custom-control-label" for="checkbox1"></label>
-                                        </div>
-                                    </td>
-                                    <td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
-                                    <td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
-                                    <td>2021-01-29</td>
-                                    <td><a href="member-post.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
-								</tr>
-								<tr>
-                                    <td>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox1">
-                                            <label class="custom-control-label" for="checkbox1"></label>
-                                        </div>
-                                    </td>
-                                    <td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
-                                    <td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
-                                    <td>2021-01-29</td>
-                                    <td><a href="member-post.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
-								</tr>
-								<tr>
-                                    <td>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox1">
-                                            <label class="custom-control-label" for="checkbox1"></label>
-                                        </div>
-                                    </td>
-                                    <td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
-                                    <td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
-                                    <td>2021-01-29</td>
-                                    <td><a href="member-post.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
-								</tr>
-								<tr>
-                                    <td>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox1">
-                                            <label class="custom-control-label" for="checkbox1"></label>
-                                        </div>
-                                    </td>
-                                    <td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
-                                    <td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
-                                    <td>2021-01-29</td>
-                                    <td><a href="member-post.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
-								</tr>
-								<tr>
-                                    <td>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox1">
-                                            <label class="custom-control-label" for="checkbox1"></label>
-                                        </div>
-                                    </td>
-                                    <td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
-                                    <td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
-                                    <td>2021-01-29</td>
-                                    <td><a href="member-post.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
-								</tr>
-								<tr>
-                                    <td>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox1">
-                                            <label class="custom-control-label" for="checkbox1"></label>
-                                        </div>
-                                    </td>
-                                    <td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
-                                    <td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
-                                    <td>2021-01-29</td>
-                                    <td><a href="member-post.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
-								</tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="row row-sm mb-3 px-0 v-table-control-wrap">
-                        <div class="col-12 col-md-12">
-                            <div class="row row-sm mt-3 d-flex justify-content-between">
-                                <div class="col-lg-4 col-md-12 text-left flex-column align-self-start">
-                                    <select class="wide gray w-50">
-                                        <option value="">批量工具</option>
-                                        <option value="1">刪除</option>
-                                        <option value="2">封存</option>
-                                    </select>
-                                    <button href="#" class="btn btn-outline-secondary rounded-0 d-block w-auto">執行</button>
-                                </div>
-                                <div class="col-lg-7 col-md-12 d-flex flex-row justify-content-end v-pagination-wrap">
-                                    <div class="d-inline">
-                                        資料筆數： <span class="text-success">200</span>
-                                    </div>
-                                    <div class="d-inline">
-                                        <ul class="pagination pagination-sm d-flex ">
-                                            <li class="page-item">
-                                                <a class="page-link arrow py-0" href="#" aria-label="Previous">
-                                                    <span aria-hidden="true">‹</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link arrow py-0" href="#" aria-label="Previous">
-                                                    <span aria-hidden="true">«</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item active" aria-current="page">
-                                                第<input type="text" class="form-control rounded-0 d-inline mx-1" id="page" value="1">頁 ， 共 1 頁
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link arrow" href="#" aria-label="Next">
-                                                    <span aria-hidden="true">›</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link arrow" href="#" aria-label="Next">
-                                                    <span aria-hidden="true">»</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+							<div class="col-lg-5 align-self-end ml-auto">
+								<div class="input-group mb-3">
+									<select>
+										<option value="0">分類</option>
+										<option value="1">分類</option>
+										<option value="2">分類</option>
+									</select>
+									<input type="text" class="form-control rounded-0 border-left-0" placeholder="請輸入文章標題" aria-label="Recipient's username" aria-describedby="button-addon2">
+									<div class="input-group-append">
+										<button class="btn btn-outline-secondary rounded-0" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="table-responsive v-table-rwd">
+							<table class="table mb-0">
+								<thead class="thead-dark">
+									<tr>
+										<th scope="col">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox">
+												<label class="custom-control-label" for="checkbox"></label>
+											</div>
+										</th>
+										<th scope="col">圖片</th>
+										<th scope="col">標題</th>
+										<th scope="col">發佈時間</th>
+										<th scope="col">操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox1">
+												<label class="custom-control-label" for="checkbox1"></label>
+											</div>
+										</td>
+										<td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
+										<td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
+										<td>2021-01-29</td>
+										<td><a href="member-post-list.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox1">
+												<label class="custom-control-label" for="checkbox1"></label>
+											</div>
+										</td>
+										<td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
+										<td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
+										<td>2021-01-29</td>
+										<td><a href="member-post.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox1">
+												<label class="custom-control-label" for="checkbox1"></label>
+											</div>
+										</td>
+										<td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
+										<td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
+										<td>2021-01-29</td>
+										<td><a href="member-post.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox1">
+												<label class="custom-control-label" for="checkbox1"></label>
+											</div>
+										</td>
+										<td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
+										<td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
+										<td>2021-01-29</td>
+										<td><a href="member-post.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox1">
+												<label class="custom-control-label" for="checkbox1"></label>
+											</div>
+										</td>
+										<td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
+										<td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
+										<td>2021-01-29</td>
+										<td><a href="member-post.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox1">
+												<label class="custom-control-label" for="checkbox1"></label>
+											</div>
+										</td>
+										<td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
+										<td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
+										<td>2021-01-29</td>
+										<td><a href="member-post.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox1">
+												<label class="custom-control-label" for="checkbox1"></label>
+											</div>
+										</td>
+										<td><a href="member-post.html"><img src="images/photo.jpg" width="50" height="50" class="border mr-2"></a></td>
+										<td><a href="member-post.html">女力時代，經濟獨立寵愛自己每一天</a></td>
+										<td>2021-01-29</td>
+										<td><a href="member-post.html" class="d-block">編輯</a><a href="#" class="d-block text-danger">刪除</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="row row-sm mb-3 px-0 v-table-control-wrap">
+							<div class="col-12 col-md-12">
+								<div class="row row-sm mt-3 d-flex justify-content-between">
+									<div class="col-lg-4 col-md-12 text-left flex-column align-self-start">
+										<select class="wide gray w-50">
+											<option value="">批量工具</option>
+											<option value="1">刪除</option>
+											<option value="2">封存</option>
+										</select>
+										<button href="#" class="btn btn-outline-secondary rounded-0 d-block w-auto">執行</button>
+									</div>
+									<div class="col-lg-7 col-md-12 d-flex flex-row justify-content-end v-pagination-wrap">
+										<div class="d-inline">
+											資料筆數： <span class="text-success">200</span>
+										</div>
+										<div class="d-inline">
+											<ul class="pagination pagination-sm d-flex ">
+												<li class="page-item">
+													<a class="page-link arrow py-0" href="#" aria-label="Previous">
+														<span aria-hidden="true">‹</span>
+													</a>
+												</li>
+												<li class="page-item">
+													<a class="page-link arrow py-0" href="#" aria-label="Previous">
+														<span aria-hidden="true">«</span>
+													</a>
+												</li>
+												<li class="page-item active" aria-current="page">
+													第<input type="text" class="form-control rounded-0 d-inline mx-1" id="page" value="1">頁 ， 共 1 頁
+												</li>
+												<li class="page-item">
+													<a class="page-link arrow" href="#" aria-label="Next">
+														<span aria-hidden="true">›</span>
+													</a>
+												</li>
+												<li class="page-item">
+													<a class="page-link arrow" href="#" aria-label="Next">
+														<span aria-hidden="true">»</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-			</div>
-			<div class="sidebar mt-1">
-				<div class="row align-items-center mb-2">
-					<div class="col-4">
-						<img src="images/photo.jpg" class="w-100 rounded-pill">
-					</div>
-					<div class="col-8">
-						<h6 class="mb-0">賣家名稱 / 暱稱</h6>
-						<p class="mb-0">testuser01 </p>
-						<p class="mb-0"><img src="images/diamond.png" height="15"><a href="seller-program.html" class="text-success ml-2">升級方案</a></p>
 					</div>
 				</div>
-				<h6 class="border-bottom mb-0"><a href="member-data.html" class="d-block p-3">帳號管理中心</a></h6>
-				<h6 class="border-bottom mb-0"><a href="member-favorites1.html" class="d-block p-3">收藏夾</a></h6>
-				<h6 class="border-bottom mb-0"><a href="member-data.html" class="d-block p-3">文章管理</a></h6>
-				<ul class="ul-style1 border-bottom py-2">
-					<li><a href="member-post-list.html" class="d-block px-3 py-1">許願池</a></li>
-					<li><a href="member-post-list.html" class="d-block px-3 py-1">開箱秀</a></li>
-					<li><a href="member-post-list.html" class="d-block px-3 py-1">流行報導</a></li>
-				</ul>
-				<h6 class="border-bottom mb-0"><a href="member-order-list.html" class="d-block p-3">訂單追蹤</a></h6>
-				<h6 class="border-bottom mb-0"><a href="member-reward.html" class="d-block p-3">VIP會員專享</a></h6>
-				<div class="border-bottom p-3">
-					<p class="text-black-50">尚未開通功能</p>
-					<a href="vip.html" class="btn btn-outline-secondary btn-sm">成為VIP會員</a>
-				</div>
-				<h6 class="border-bottom mb-0"><a href="#" class="d-block p-3">賣家管理中心</a></h6>
-				<div class="p-3">
-					<p class="text-black-50">尚未開通功能</p>
-					<a href="#" class="btn btn-primary btn-sm">成為VIP會員</a>
-				</div>
 			</div>
+
+
 		</div>
 
 		<!-- 平台特色

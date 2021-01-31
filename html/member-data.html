@@ -26,7 +26,7 @@
 <body>
 	<!-- wrapper
 		============================================= -->
-	<div class="wrapper">
+	<div class="wrapper member-center">
 
 		<!-- header 手機
 			============================================= -->
@@ -167,10 +167,10 @@
 						<button type="button" class="btn btn-secondary dropdown-toggle border-0 rounded-0" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
 						</button>
 						<div class="dropdown-menu dropdown-menu-lg-right rounded-0 m-0 p-0">
-								<a href="page.html" class="dropdown-item border-bottom py-2" type="button">如何刊登商品</a>
-								<a href="page.html" class="dropdown-item border-bottom py-2" type="button">會員規範</a>
-								<a href="page.html" class="dropdown-item border-bottom py-2" type="button">認證賣家查詢</a>
-								<a href="contact.html" class="dropdown-item border-bottom py-2" type="button">聯繫客服</a>
+							<a href="page.html" class="dropdown-item border-bottom py-2" type="button">如何刊登商品</a>
+							<a href="page.html" class="dropdown-item border-bottom py-2" type="button">會員規範</a>
+							<a href="page.html" class="dropdown-item border-bottom py-2" type="button">認證賣家查詢</a>
+							<a href="contact.html" class="dropdown-item border-bottom py-2" type="button">聯繫客服</a>
 						</div>
 					</div>
 				</div>
@@ -451,125 +451,154 @@
 			</div>
 		</header>
 
-		<div class="container overflow-hidden py-4">
+		<div class="container v-page-wrapper">
 			<div class="py-3">
 				<h3 class="text-primary d-inline mr-2">Member Centre</h3>
 				<h6 class="d-inline mr-2">會員中心</h6>
 			</div>
 			<hr class="py-1">
-			<div class="main">
-				<form class="mb-5">
-					<h6 class="text-primary">基本資料</h6>
-					<hr>
-					<div class="form-group row align-items-center">
-						<label for="products-name" class="col-sm-12 col-form-label">姓名</label>
-						<div class="col-sm-6">
-							<input type="text" class="form-control rounded-0" id="products-name">
-						</div>
-						<div class="col-sm-4 my-2">
-							<div class="custom-control custom-radio custom-control-inline">
-								<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-								<label class="custom-control-label" for="customRadio1">先生</label>
+			<div class="row">
+				<div class="col-md-4 col-lg-3 p-3">
+					<div class="sidebar mt-1">
+						<div class="row align-items-center mb-2">
+							<div class="col-4">
+								<img src="images/photo.jpg" class="w-100 rounded-pill">
 							</div>
-							<div class="custom-control custom-radio custom-control-inline">
-								<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-								<label class="custom-control-label" for="customRadio2">小姐</label>
+							<div class="col-8">
+								<h6 class="mb-0">賣家名稱 / 暱稱</h6>
+								<p class="mb-0">testuser01 </p>
+								<p class="mb-0"><img src="images/diamond.png" height="15"><a href="seller-program.html" class="text-success ml-2">升級方案</a></p>
 							</div>
 						</div>
-					</div>
-					<div class="form-group row align-items-center">
-						<label for="email" class="col-sm-12 col-form-label">Email 電子郵件</label>
-						<div class="col-sm-6">
-							<input type="email" class="form-control rounded-0" id="email">
+						<h6 class="border-bottom mb-0"><a href="member-data.html" class="d-block p-3">帳號管理中心</a></h6>
+						<ul class="ul-style1 border-bottom py-2">
+							<li><a href="member-data.html" class="d-block px-3 py-1">個人檔案</a></li>
+							<li><a href="member-data-address.html" class="d-block px-3 py-1">收件地址</a></li>
+							<li><a href="member-data-security.html" class="d-block px-3 py-1">密碼更改</a></li>
+						</ul>
+						<h6 class="border-bottom mb-0"><a href="member-favorites1.html" class="d-block p-3">收藏夾</a></h6>
+						<h6 class="border-bottom mb-0"><a href="member-order-list.html" class="d-block p-3">訂單追蹤</a></h6>
+						<h6 class="border-bottom mb-0"><a href="member-reward.html" class="d-block p-3">VIP會員專享</a></h6>
+						<div class="border-bottom p-3">
+							<p class="text-black-50">尚未開通功能</p>
+							<a href="vip.html" class="btn btn-outline-secondary btn-sm">成為VIP會員</a>
 						</div>
-					</div>
-					<div class="form-group row align-items-center">
-						<label for="phone" class="col-sm-12 col-form-label">手機號碼</label>
-						<div class="col-sm-6">
-							<input type="text" class="form-control rounded-0" id="phone">
+						<h6 class="border-bottom mb-0"><a href="#" class="d-block p-3">賣家管理中心</a></h6>
+						<div class="p-3">
+							<p class="text-black-50">尚未開通功能</p>
+							<a href="#" class="btn btn-primary btn-sm">成為VIP會員</a>
 						</div>
-					</div>
-					<div class="form-group row row-xs align-items-center">
-						<label for="phone2" class="col-12 col-form-label">聯絡電話</label>
-						<div class="col-2 col-md-1">
-							<input type="text" class="form-control rounded-0" id="phone2">
-						</div>
-						<div class="col-auto">
-							<span class="px-1">-</span>
-						</div>
-						<div class="col-5 col-md-3">
-							<input type="text" class="form-control rounded-0" id="phone2">
-						</div>
-						<div class="col-auto">
-							<span class="px-1">#</span>
-						</div>
-						<div class="col-2 col-md-1">
-							<input type="text" class="form-control rounded-0" id="phone2">
-						</div>
-					</div>
-					<div class="form-group row row-sm align-items-center">
-						<label for="phone" class="col-12 col-form-label">生日</label>
-						<div class="col-4 col-md-2">
-							<select class="wide">
-								<option value="0">1991</option>
-								<option value="0">1991</option>
-								<option value="0">1991</option>
-								<option value="0">1991</option>
-								<option value="0">1991</option>
-								<option value="0">1991</option>
-								<option value="0">1991</option>
-								<option value="0">1991</option>
-								<option value="0">1991</option>
-								<option value="0">1991</option>
-							</select>
-						</div>
-						<div class="col-4 col-md-2">
-							<select class="wide">
-								<option value="0">02</option>
-							</select>
-						</div>
-						<div class="col-4 col-md-2">
-							<select class="wide">
-								<option value="0">26</option>
-							</select>
-						</div>
-						<div class="col-md-6">
-							<a href="#" class="text-success">會員生日禮</a>
-						</div>
-					</div>
-					<div class="form-group">
-						<a href="#" class="btn btn-primary rounded-0 px-4">儲存</a>
-					</div>
-				</form>
-			</div>
-			<div class="sidebar mt-1">
-				<div class="row align-items-center mb-2">
-					<div class="col-4">
-						<img src="images/photo.jpg" class="w-100 rounded-pill">
-					</div>
-					<div class="col-8">
-						<h6 class="mb-0">賣家名稱 / 暱稱</h6>
-						<p class="mb-0">testuser01 </p>
-						<p class="mb-0"><img src="images/diamond.png" height="15"><a href="seller-program.html" class="text-success ml-2">升級方案</a></p>
 					</div>
 				</div>
-				<h6 class="border-bottom mb-0"><a href="member-data.html" class="d-block p-3">帳號管理中心</a></h6>
-				<ul class="ul-style1 border-bottom py-2">
-					<li><a href="member-data.html" class="d-block px-3 py-1">個人檔案</a></li>
-					<li><a href="member-data-address.html" class="d-block px-3 py-1">收件地址</a></li>
-					<li><a href="member-data-security.html" class="d-block px-3 py-1">密碼更改</a></li>
-				</ul>
-				<h6 class="border-bottom mb-0"><a href="member-favorites1.html" class="d-block p-3">收藏夾</a></h6>
-				<h6 class="border-bottom mb-0"><a href="member-order-list.html" class="d-block p-3">訂單追蹤</a></h6>
-				<h6 class="border-bottom mb-0"><a href="member-reward.html" class="d-block p-3">VIP會員專享</a></h6>
-				<div class="border-bottom p-3">
-					<p class="text-black-50">尚未開通功能</p>
-					<a href="vip.html" class="btn btn-outline-secondary btn-sm">成為VIP會員</a>
-				</div>
-				<h6 class="border-bottom mb-0"><a href="#" class="d-block p-3">賣家管理中心</a></h6>
-				<div class="p-3">
-					<p class="text-black-50">尚未開通功能</p>
-					<a href="#" class="btn btn-primary btn-sm">成為VIP會員</a>
+				<div class="col-md-8 col-lg-9 p-3">
+					<div class="main">
+						<form class="mb-5">
+							<h6 class="text-primary">基本資料</h6>
+							<hr>
+							<div class="form-group row align-items-center">
+								<label for="products-name" class="col-sm-12 col-form-label">姓名</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control rounded-0" id="products-name">
+								</div>
+								<div class="col-sm-4 my-2">
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+										<label class="custom-control-label" for="customRadio1">先生</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+										<label class="custom-control-label" for="customRadio2">小姐</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group row align-items-center">
+								<label for="email" class="col-sm-12 col-form-label">暱稱</label>
+								<div class="col-sm-6">
+									<input type="email" class="form-control rounded-0" id="email">
+								</div>
+							</div>
+							<div class="form-group row align-items-center">
+								<label for="email" class="col-sm-12 col-form-label">Email 電子郵件</label>
+								<div class="col-sm-6">
+									<input type="email" class="form-control rounded-0" id="email">
+								</div>
+							</div>
+							<div class="form-group row align-items-center">
+								<label for="phone" class="col-sm-12 col-form-label">手機號碼</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control rounded-0" id="phone">
+								</div>
+							</div>
+							<div class="form-group row row-xs align-items-center">
+								<label for="phone2" class="col-12 col-form-label">聯絡電話</label>
+								<div class="col-2 col-md-1">
+									<input type="text" class="form-control rounded-0" id="phone2">
+								</div>
+								<div class="col-auto">
+									<span class="px-1">-</span>
+								</div>
+								<div class="col-5 col-md-3">
+									<input type="text" class="form-control rounded-0" id="phone2">
+								</div>
+								<div class="col-auto">
+									<span class="px-1">#</span>
+								</div>
+								<div class="col-2 col-md-1">
+									<input type="text" class="form-control rounded-0" id="phone2">
+								</div>
+							</div>
+							<div class="form-group row row-sm align-items-center">
+								<label for="phone" class="col-12 col-form-label">生日</label>
+								<div class="col-4 col-md-2">
+									<select class="wide">
+										<option value="0">1991</option>
+										<option value="0">1991</option>
+										<option value="0">1991</option>
+										<option value="0">1991</option>
+										<option value="0">1991</option>
+										<option value="0">1991</option>
+										<option value="0">1991</option>
+										<option value="0">1991</option>
+										<option value="0">1991</option>
+										<option value="0">1991</option>
+									</select>
+								</div>
+								<div class="col-4 col-md-2">
+									<select class="wide">
+										<option value="0">02</option>
+									</select>
+								</div>
+								<div class="col-4 col-md-2">
+									<select class="wide">
+										<option value="0">26</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<a href="#" class="text-success">會員生日禮</a>
+								</div>
+							</div>
+							<div class="form-group row row-sm align-items-center">
+								<label for="phone" class="col-12 col-form-label">頭像上傳</label>
+								<div class="container my-4 v-img-uploader">
+									<div class="row">
+										<div class="col-md-3 p-1">
+											<div class="photo-list v123-ratio-frame ratio-4-3 active">
+												<a href="#" class="add"></a>
+												<div class="photo" style="background-image: url(images/banner-12.jpg);">
+													<a href="#" class="close">×</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="form-group">
+								<a href="#" class="btn btn-primary rounded-0 px-4">儲存</a>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

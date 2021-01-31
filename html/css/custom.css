@@ -1295,10 +1295,10 @@ footer .ul-w-50 {
 /* ----------------------------------------------------------------
 	產品頁
 -----------------------------------------------------------------*/
-.sidebar {
+/* .sidebar {
     width: 24%;
     float: left;
-}
+} */
 
 .sidebar .form-group.row {
     margin-right: -5px;
@@ -1381,10 +1381,10 @@ footer .ul-w-50 {
     color: #3E3A39;
 }
 
-.main {
+/* .main {
     float: right;
     width: 72%;
-}
+} */
 
 .list-icon1,
 .list-icon2 {
@@ -2143,12 +2143,15 @@ form .table {
 /* ----------------------------------------------------------------
 	會員中心
 -----------------------------------------------------------------*/
-.member-centre header {
+.seller-center{
+    background-color: #F6F6F6;
+}
+.seller-center header {
     position: relative;
     z-index: 99;
 }
 
-.member-centre #bars {
+.seller-center #bars {
     position: fixed;
     right: 10px;
     top: 50px;
@@ -2156,41 +2159,38 @@ form .table {
     display: none;
 }
 
-.member-centre .main {
-    width: 80%;
-}
-
-.member-centre .sidebar,
-.member-centre .main {
+.seller-center .sidebar,
+.seller-center .main {
     padding-top: 57px;
+    width: inherit;
 }
 
-.member-centre .noafte::after {
+.seller-center .noafte::after {
     display: none;
 }
 
-.member-centre .nav .nav-item .nav-link {
+.seller-center .nav .nav-item .nav-link {
     color: #b5b5b6;
 }
 
-.member-centre .nav .nav-item .nav-link:hover {
+.seller-center .nav .nav-item .nav-link:hover {
     color: #4C417A;
 }
 
-.member-centre .nav .nav-item .nav-link.active {
+.seller-center .nav .nav-item .nav-link.active {
     color: #4C417A;
     font-weight: 600;
 }
 
-.member-centre .table {
+.seller-center .table {
     min-width: 800px;
 }
 
-.member-centre .input-group>.form-control {
+.seller-center .input-group>.form-control {
     border-right: none;
 }
 
-.member-centre .input-group-append .btn::before {
+.seller-center .input-group-append .btn::before {
     content: "";
     position: absolute;
     border-left: 1px solid #ced4da;
@@ -2200,13 +2200,13 @@ form .table {
     margin-top: -35%;
 }
 
-.member-centre .input-group-append .btn {
+.seller-center .input-group-append .btn {
     color: #b3b3b4;
     border-left: none;
     background-color: transparent !important;
 }
 
-.member-centre .input-group-append .btn:hover {
+.seller-center .input-group-append .btn:hover {
     color: #A199B9 !important;
     background-color: transparent !important;
     border-color: #ced4da !important;
@@ -2217,8 +2217,8 @@ form .table {
     line-height: 36px !important;
 }
 
-.member-centre .datepicker::before,
-.member-centre .category::before {
+.seller-center .datepicker::before,
+.seller-center .category::before {
     content: "";
     display: block;
     width: 20px;
@@ -2230,13 +2230,13 @@ form .table {
     top: 8px;
 }
 
-.member-centre .category::before {
+.seller-center .category::before {
     background-image: url(../images/pen-icon.svg);
     left: auto;
     right: 8px;
 }
 
-.member-centre .datepicker .form-control {
+.seller-center .datepicker .form-control {
     padding-left: 30px;
 }
 
@@ -2246,7 +2246,7 @@ form .table {
 
 /* 
 VECTOR 
-.member-centre .pagination .page-item .page-link.arrow {
+.seller-center .pagination .page-item .page-link.arrow {
     width: 25px;
     height: 25px;
     line-height: 19px;
@@ -2286,7 +2286,7 @@ VECTOR
     background-color: #86b350;
 }
 
-.member-centre .custom-switch .custom-control-label::after {
+.seller-center .custom-switch .custom-control-label::after {
     background-color: white;
     top: calc(.1rem + 2px);
 }
@@ -2368,11 +2368,11 @@ VECTOR
     background: #ccc;
 }
 
-.member-centre .form-group.row .category::before {
+.seller-center .form-group.row .category::before {
     right: 23px;
 }
 
-.member-centre .form-group.row .datepicker::before {
+.seller-center .form-group.row .datepicker::before {
     left: 23px;
 }
 
@@ -2521,7 +2521,7 @@ VECTOR
 }
 
 @media only screen and (max-width: 1280px) {
-    .member-centre .sidebar {
+    .seller-center .sidebar {
         padding-left: 2rem !important;
         padding-right: 2rem !important;
     }
@@ -2532,13 +2532,13 @@ VECTOR
         width: 100% !important;
     }
 
-    .member-centre .sidebar {
+    .seller-center .sidebar {
         width: 25%;
         padding-left: 1rem !important;
         padding-right: 1rem !important;
     }
 
-    .member-centre .main {
+    .seller-center .main {
         width: 75%;
     }
 }
@@ -2745,17 +2745,17 @@ VECTOR
         text-align: center;
     }
 
-    .member-centre .container-fluid {
+    .seller-center .container-fluid {
         display: block !important;
     }
 
-    .member-centre .sidebar,
-    .member-centre .main {
+    .seller-center .sidebar,
+    .seller-center .main {
         width: 100%;
         float: none !important;
     }
 
-    .member-centre .sidebar {
+    .seller-center .sidebar {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
@@ -2769,7 +2769,7 @@ VECTOR
         margin-left: .3rem !important;
     }
 
-    .member-centre .main .bg-white {
+    .seller-center .main .bg-white {
         padding-top: 0px;
         padding: 1rem !important;
     }
@@ -2959,11 +2959,11 @@ VECTOR
         right: 15px;
     }
 
-    .member-centre #bars {
+    .seller-center #bars {
         display: block;
     }
 
-    .member-centre .sidebar {
+    .seller-center .sidebar {
         display: none;
     }
 }
@@ -2973,6 +2973,20 @@ VECTOR
 /* ========================================================== */
 /* VECTOR */
 /* ========================================================== */
+
+.menuzord{
+    float: none;
+}
+
+
+.v-page-wrapper{
+    padding: 1.5rem 0 !important;
+}
+@media all and (max-width: 767.98px) {
+    .v-page-wrapper{
+        padding: 1rem 1.5rem !important;
+    }
+}
 
 .table-responsive .table{
     min-width: 700px;
