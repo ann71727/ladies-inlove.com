@@ -2165,43 +2165,6 @@ form .table {
     }
 }
 
-.seller-center .navbar-text{
-    display: block;
-    float: right;
-}
-.seller-center .v-navbar .container-fluid{
-    display: flex;
-    align-items:center;
-    justify-content:space-between
-}
-.seller-center .v-navbar .navbar-brand .v-logo-title{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.seller-center .v-navbar .navbar-brand .v-logo-title h4,
-.seller-center .v-navbar .navbar-brand .v-logo-title small
- {
-    margin-bottom: 6px;
-    padding: 0;
-}
-.seller-center .v-navbar .navbar-brand .v-logo-title h4{
-    margin-left:5px;
-    margin-right: 5px;
-}
-
-/* 行動 */
-@media all and (max-width: 767.98px) {
-    .seller-center .v-navbar .navbar-brand{
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-    }
-}
-.seller-center .v-navbar .navbar-brand a{
-    color: white;
-}
-
 
 .seller-center #bars {
     position: fixed;
@@ -2813,7 +2776,6 @@ VECTOR
     }
 
     .navbar-text {
-        position: relative;
         width: 100%;
         text-align: right;
         margin-bottom: .5rem;

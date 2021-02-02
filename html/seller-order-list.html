@@ -29,73 +29,92 @@
 		============================================= -->
   <div class="wrapper seller-center">
     <!-- header
-			============================================= -->
+		============================================= -->
     <header>
-      <!-- navbar
-				============================================= -->
-      <div id="menuzord">
-        <!-- Image and text -->
-        <nav class="navbar navbar-dark bg-primary fixed-top shadow py-0">
-          <div class="container-fluid">
-            <a class="navbar-brand py-2" href="#">
+      <nav id="menuzord" class="v-navbar navbar-dark bg-primary fixed-top shadow py-0 ">
+        <div class="container-fluid d-flex">
+          <div class="navbar-brand py-2" href="#">
+            <a class="v-logo-title">
               <img src="images/logo-icon.svg" alt="" width="40" height="40" class="d-inline-block">
-              <h4 class="d-inline-block pr-2">Vendor Centre</h4><small>賣家中心</small>
+              <h4 class="">Vendor Centre</h4><small>賣家中心</small>
             </a>
-            <div class="navbar-text py-0">
-              <a href="#"><img src="images/photo.jpg" height="30" class="border border-light border-2 rounded-circle mr-2">testuser01<img src="images/diamond.png" height="15"></a>
-              <a href="#" class="border-left py-4 ml-3 pl-3"><i class="far fa-question-circle"></i> 賣家幫助中心</a>
-            </div>
+          </div>
+          <div class="navbar-text py-0">
+            <button class="menu-trigger d-block d-sm-none"> <i class="material-icons">menu</i> </button>
+            <a href="#"><img src="images/photo.jpg" height="30" class="border border-light border-2 rounded-circle mr-2">testuser01<img src="images/diamond.png" height="15"></a>
+            <a href="#service-center-menu" class="border-left py-4 ml-3 pl-3" data-toggle="collapse"><i class="far fa-question-circle"></i>賣家幫助中心</a>
+          </div>
+        </div>
+      </nav>
+      <div class="menu-body visibility">
+        <nav class="menu-container">
+          <ul class="menu-items">
+            <li class="has-sub"> <span class="dropdown-heading">訂單管理</span>
+              <ul>
+                <li><a href="seller-order-list.html">全部訂單</a></li>
+                <li><a href="seller-order-list.html">尚未付款 (3)</a></li>
+                <li><a href="seller-order-list.html">待出貨 (0)</a></li>
+                <li><a href="seller-order-list.html">已完成 (10)</a></li>
+              </ul>
+            </li>
+            <li class="has-sub"> <span class="dropdown-heading">上架商品</span>
+              <ul>
+                <li><a href="seller-products-list.html">我的商品</a></li>
+                <li><a href="seller-product.html">新增商品</a></li>
+              </ul>
+            </li>
+            <li> <a href="seller-options.html">賣家設定</a></li>
+            <li> <a href="member-data.html">我的帳戶</a></li>
+          </ul>
+          <div class="menu-head text-center">
+            <a href="#" class="mx-3 text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="mx-3 text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="mx-3 text-white"><i class="fab fa-youtube"></i></a>
           </div>
         </nav>
       </div>
-      <a href="#" id="bars" class="btn btn-outline-light btn-sm"><i class="fas fa-bars"></i></a>
     </header>
 
     <div class="container-fluid v-page-wrapper">
       <div class="row">
         <div class="col-md-4 col-lg-3 py-3 d-none d-lg-flex">
-          <div class="sidebar bg-white shadow px-5">
+          <div class="sidebar bg-white shadow px-5 w-100">
             <div class="pt-4">
-              <article class="beefup">
-                <h4 class="beefup__head noafte">
-                  <a href="seller-setup.html">賣家設定</a>
-                </h4>
-              </article>
-              <article class="beefup example is-open">
+              <article class="beefup example">
                 <h4 class="beefup__head">
                   訂單管理
                 </h4>
                 <div class="beefup__body">
-                  <a href="seller-order.html">全部訂單</a>
-                  <a href="#">尚未付款</a>
-                  <a href="#">待出貨</a>
-                  <a href="#">已完成</a>
+                  <a href="seller-order-list.html">全部訂單</a>
+                  <a href="seller-order-list.html">尚未付款 (3)</a>
+                  <a href="seller-order-list.html">待出貨 (0)</a>
+                  <a href="seller-order-list.html">已完成 (10)</a>
                 </div>
               </article>
-              <article class="beefup example">
+              <article class="beefup example is-open">
                 <h4 class="beefup__head">
                   上架商品
                 </h4>
                 <div class="beefup__body">
                   <a href="seller-products-list.html">我的商品</a>
-                  <a href="seller-up.html">新增商品</a>
+                  <a href="seller-product.html">新增商品</a>
                 </div>
               </article>
               <article class="beefup">
                 <h4 class="beefup__head noafte">
-                  <a href="./seller-options.html">賣家設定</a>
+                  <a href="seller-options.html">賣家設定</a>
                 </h4>
               </article>
               <article class="beefup">
                 <h4 class="beefup__head noafte">
-                  <a href="#">客服管理</a>
+                  <a href="member-data.html">我的帳戶</a>
                 </h4>
               </article>
             </div>
           </div>
         </div>
         <div class="col-md-12 col-lg-9 p-3">
-          <div class="main">
+          <div class="main w-100 pr-lg-4 pr-lg-0">
             <div class="m-3 p-5 bg-white shadow">
               <ul class="nav">
                 <li class="nav-item">
@@ -232,6 +251,7 @@
                   </li>
                 </ul>
               </nav>
+
             </div>
           </div>
         </div>
