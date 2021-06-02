@@ -2430,7 +2430,7 @@ VECTOR
 
 .products-up.box {
     width: auto;
-    height: 120px;
+    /* height: 120px; */
     padding-left: .5rem;
     padding-right: .5rem;
 }
