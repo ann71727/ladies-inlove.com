@@ -148,6 +148,12 @@
                                 <table class="table mb-0">
                                     <thead class="thead-dark">
                                         <tr>
+                                            <th scope="col">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox">
+                                                    <label class="custom-control-label" for="checkbox"></label>
+                                                </div>
+                                            </th>
                                             <th scope="col">商品名稱</th>
                                             <th scope="col">商品 ID</th>
                                             <th scope="col">商品類別</th>
@@ -160,31 +166,35 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <a href="seller-product.html">
-                                                    <img src="images/product-1.jpg" width="35" height="35" class="border mr-2">Product Name
-                                                </a>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox1">
+                                                    <label class="custom-control-label" for="checkbox1"></label>
+                                                </div>
                                             </td>
+                                            <td><img src="images/product-1.jpg" width="35" height="35" class="border mr-2">Product Name</td>
                                             <td>Ｌ20201102A</td>
                                             <td>直購區 <br>
                                                 > 精品包包 > Louis Vitton</td>
                                             <td>＄ 78,800</td>
                                             <td>1</td>
                                             <td>已上架</td>
-                                            <td><a href="#" class="d-block">下架商品</a></td>
+                                            <td><a href="#" class="d-block">刪除</a><a href="#" class="d-block">下架商品</a></td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <a href="seller-product.html">
-                                                    <img src="images/product-2.jpg" width="35" height="35" class="border mr-2">Product Name
-                                                </a>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox2">
+                                                    <label class="custom-control-label" for="checkbox2"></label>
+                                                </div>
                                             </td>
+                                            <td><img src="images/product-2.jpg" width="35" height="35" class="border mr-2">Product Name</td>
                                             <td>Ｌ20201102A</td>
                                             <td>直購區 <br>
                                                 > 精品包包 > Louis Vitton</td>
                                             <td>＄ 65,800</td>
                                             <td>1</td>
                                             <td>已下架</td>
-                                            <td><a href="#" class="d-block">重新上架</a></td>
+                                            <td><a href="#" class="d-block">刪除</a><a href="#" class="d-block">重新上架</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -192,7 +202,15 @@
                             <div class="row row-sm mb-3 px-0 v-table-control-wrap">
                                 <div class="col-12 col-md-12">
                                     <div class="row row-sm mt-3 d-flex justify-content-between">
-                                        <div class="col-lg-12 col-md-12 d-flex flex-row justify-content-end v-pagination-wrap">
+                                        <div class="col-lg-4 col-md-12 text-left flex-column align-self-start">
+                                            <select class="wide gray w-50">
+                                                <option value="">批量工具</option>
+                                                <option value="1">刪除</option>
+                                                <option value="2">封存</option>
+                                            </select>
+                                            <button href="#" class="btn btn-outline-secondary rounded-0 d-block w-auto">執行</button>
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 d-flex flex-row justify-content-end v-pagination-wrap">
                                             <div class="d-inline">
                                                 商品數量： <span class="text-success">2 / Ｕnlimited</span>
                                             </div>

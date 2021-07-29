@@ -278,6 +278,7 @@ button {
 .btn-primary {
     background-color: #4C417A;
     border-color: #4C417A;
+    color: white;
 }
 
 .btn-primary:hover {
@@ -2266,14 +2267,14 @@ form .table {
 }
 
 .seller-center .input-group-append .btn {
-    color: #b3b3b4;
+    /* color: #b3b3b4; */
     border-left: none;
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
 }
 
 .seller-center .input-group-append .btn:hover {
-    color: #A199B9 !important;
-    background-color: transparent !important;
+    /* color: #A199B9 !important; */
+    /* background-color: transparent !important; */
     border-color: #ced4da !important;
 }
 
@@ -3190,7 +3191,41 @@ VECTOR
 }
 
 
+#btn_shipping_no{
+    color: white;
+    background-color: #4C417A !important;
+}
 
+
+
+
+#v-order-status-editor{
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+}
+
+
+/* 賣家設定 - 編輯欄位 */
+.v-btn-edit,
+.v-edit-icon{
+    vertical-align:center;
+    /* margin-left: .1em; */
+    cursor: pointer;
+    font-size: 1.2em;
+} 
+.v-edit-input{
+    display: none;
+    margin-top: 1em;
+}
+
+
+/* 星星評價 */
+.rating{
+    color: rgb(255, 153, 0);
+    box-sizing: border-box;
+    width: auto;
+    font-size: 28px;
+}
 
 /* xs - Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {}

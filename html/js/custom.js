@@ -293,3 +293,40 @@ $('.v-checkout-info-tab').each(function( index , ele ) {
 });
 
 
+
+
+
+
+
+/**
+ * 賣家設定 - 編輯欄位
+ */
+jQuery('.v-btn-edit').on('click',function(e){
+  $(this).next('.v-edit-input').slideToggle()
+})
+jQuery('.v-edit-input .done').on('click',function(e){
+  $(this).closest('.v-edit-input').slideUp()
+})
+
+
+/**
+ * edit icon
+ */
+jQuery('.v-edit-icon').on('click',function(e){
+  const target = $(this).data('target')
+  $(target).slideToggle()
+})
+
+
+/**
+ * 星星評價
+ */
+var options = {
+  max_value: 5,
+  step_size: 1,
+  cursor: 'pointer',
+}
+jQuery(".rating").rate(options);
+
+
+
