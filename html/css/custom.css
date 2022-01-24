@@ -876,8 +876,8 @@ button {
 -----------------------------------------------------------------*/
 #goToTop {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 60px;
+    right: 20px;
     z-index: 99999;
 }
 
@@ -3303,6 +3303,22 @@ VECTOR
     min-height: initial;
     font-weight: initial;
 }
+
+
+/* 220124 */
+.v-chat-btn-add-room::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background-image: url(../images/chat-icon.svg);
+    background-size: cover;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+
 
 
 /* xs - Extra small devices (portrait phones, less than 576px) */
