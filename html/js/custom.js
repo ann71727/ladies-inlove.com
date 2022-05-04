@@ -129,7 +129,10 @@ $(function () {
 $(function () {
   $('.carousel-dots').owlCarousel({
     margin:10,
-    items:1
+    items:1,
+    loop:true,
+    autoplay:true,
+    autoplaySpeed:1000
   });
   $('.carousel-nav').owlCarousel({
     margin:10,
