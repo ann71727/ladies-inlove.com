@@ -3318,7 +3318,44 @@ VECTOR
     margin-top: -4px;
 }
 
-
+/*
+220728
+手機板搜尋欄
+*/
+.v_header_search{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: none;
+}
+.v_header_search .v_keywords{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: .2em 1em;
+    border: none;
+    box-sizing: border-box;
+}
+.v_header_search .v_keywords:focus{
+    border: none;
+    outline: none;
+}
+.v_header_search .v_close{
+    position: absolute;
+    top: 50%;
+    right: .5em;
+    z-index: 99;
+    font-size: 22px !important;
+    color: #9a9a9a !important;
+    transform: translateY(-50%);s
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
 
 
 /* xs - Extra small devices (portrait phones, less than 576px) */

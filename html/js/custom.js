@@ -299,6 +299,25 @@ $('.v-checkout-info-tab').each(function( index , ele ) {
 
 
 
+/**
+ * 220728
+ * 手機板搜尋框
+ */
+ jQuery(document).ready(function () {
+  const m_menubar = jQuery('menu.menubar')
+  const btn = jQuery('a.v_search_triger', m_menubar)
+  const s_bar = jQuery('.v_header_search', m_menubar)
+  const btn_close = jQuery('.v_close', m_menubar)
+  btn.on('click', e => {
+    e.preventDefault()
+    s_bar.slideToggle(250)
+  })
+  btn_close.on('click', e => {
+    e.preventDefault()
+    s_bar.slideUp(100)
+  })
+});
+
 
 
 /**
@@ -330,6 +349,9 @@ var options = {
   cursor: 'pointer',
 }
 jQuery(".rating").rate(options);
+
+
+
 
 
 
