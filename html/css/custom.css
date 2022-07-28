@@ -2227,9 +2227,15 @@ form .table {
 
 .seller-center .sidebar,
 .seller-center .main {
-    padding-top: 57px;
+    padding-top: 2em;
     width: inherit;
 }
+@media all and (max-width: 767.98px) {
+    .seller-center .main{
+        padding-top: 30px;
+    }
+}
+
 
 .seller-center .noafte::after {
     display: none;
@@ -3058,7 +3064,7 @@ VECTOR
 /* 行動 */
 @media all and (max-width: 767.98px) {
     .v-page-wrapper{
-        padding: 1rem 1.5rem !important;
+        padding: 0 0 !important;
     }
 }
 
@@ -3208,10 +3214,12 @@ VECTOR
 /* 賣家設定 - 編輯欄位 */
 .v-btn-edit,
 .v-edit-icon{
-    vertical-align:center;
+    vertical-align:middle;
     /* margin-left: .1em; */
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1em !important;
+    color: #3E3A39 !important;
+    margin: -.3em 0 0 -.1em;
 } 
 .v-edit-input{
     display: none;
@@ -3331,13 +3339,29 @@ VECTOR
     background-color: white;
     display: none;
 }
+.v_header_search form{
+    height: inherit;
+}
 .v_header_search .v_keywords{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 100% !important;
     margin: 0;
     padding: .2em 1em;
     border: none;
     box-sizing: border-box;
+    color: #3d3d3d;
+}
+.v_header_search .v_dropdown{
+    color: #3d3d3d;
+    width: 30%;
+    max-width: 30%;
+    height: 100% !important;
+    
+    display:table;
+}
+.v_header_search .v_dropdown span{
+    display:table-cell;
+    vertical-align:middle;
 }
 .v_header_search .v_keywords:focus{
     border: none;
