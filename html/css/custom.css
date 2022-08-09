@@ -3382,6 +3382,17 @@ VECTOR
 }
 
 
+.v_order_number_wrap{
+    display: flex;
+    align-items: center;
+}
+
+.v_order_number_wrap .v_order_number{
+    margin-right: .3em;
+    margin-bottom: 0
+}
+
+
 /* xs - Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {}
 
