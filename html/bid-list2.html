@@ -185,14 +185,14 @@
                     <div class="col-lg-9 col-md-7">
                         <div class="row">
                             <div class="col-lg-7">
-                                <form class="form-inline search">
+                                <form class="form-inline search flex-nowrap">
                                     <select>
-										<option value="0">本站分類搜尋</option>
-										<option value="1">直購搜尋</option>
-										<option value="2">競標搜尋</option>
-										<option value="3">認證商品</option>
-										<option value="4">認證賣家</option>
-									</select>
+                                        <option value="0">本站分類搜尋</option>
+                                        <option value="1">直購搜尋</option>
+                                        <option value="2">競標搜尋</option>
+                                        <option value="3">認證商品</option>
+                                        <option value="4">認證賣家</option>
+                                    </select>
                                     <input class="form-control rounded-0 border-right-0" type="search" placeholder="請輸入搜尋關鍵字" aria-label="Search">
                                     <button class="btn btn-outline-success border-left-0 rounded-0 my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
                                 </form>
@@ -748,21 +748,25 @@
                             </div>
                         </div>
                         <hr>
+                        <hr class="my-4">
                         <div class="products-list row align-items-center">
                             <div class="col-6 col">
-                                <div class="photo lazy" data-src="images/product-1.jpg">
-                                    <a href="#" class="bookmark d-block d-sm-none"></a>
-                                    <a href="#"></a>
+                                <div class="photo lazy" data-src="images/product-2.jpg">
+                                    <div class="v_circle">
+                                        <div class="v_text">已結標</div>
+                                    </div>
+                                    <a href="bid-detail-finish.html" class="bookmark d-block d-sm-none"></a>
+                                    <a href="bid-detail-finish.html"></a>
                                 </div>
                             </div>
                             <div class="col-6 col">
-                                <h3><a href="products-detail.html">Chloé C Mini leather shoulder bag</a></h3>
-                                <div class="countdown mb-2">
-                                    倒數<span class="h4 text-white bg-danger px-1">00</span>天<span class="h4 text-white bg-danger px-1">10</span>:<span class="h4 text-white bg-danger px-1">06</span>:<span class="h4 text-white bg-danger px-1">40</span>
+                                <h3><a href="bid-detail-finish.html">Chloé C Mini leather shoulder bag</a></h3>
+                                <div class="countdown mb-2 v_bid_end">
+                                    倒數<span class="h4 text-success bg-light px-1">00</span>天<span class="h4 text-success bg-light px-1">00</span>:<span class="h4 text-success bg-light px-1">00</span>:<span class="h4 text-success bg-light px-1">00</span>
                                 </div>
-                                <strong class="d-block d-sm-none">目前出價：＄23,800</strong>
+                                <strong class="d-block d-sm-none">得標價：＄23,800</strong>
                                 <strong class="d-block d-sm-none mb-3">實名認證賣家</strong>
-                                <a href="#" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
+                                <a href="bid-detail-finish.html" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none cursor-na">已結標</a>
                             </div>
                             <div class="col text-center d-none d-sm-block">
                                 <small>目前出價</small>
@@ -772,7 +776,37 @@
                                 <strong>實名認證賣家</strong>
                             </div>
                             <div class="col d-none d-sm-block">
-                                <a href="#" class="btn btn-outline-secondary btn-block rounded-0">我要競標</a>
+                                <a href="bid-detail-finish.html" class="btn btn-outline-secondary btn-block rounded-0 cursor-na">已結標</a>
+                            </div>
+                            <div class="col d-none d-sm-block">
+                                <a href="bid-detail-finish.html" class="bookmark"></a>
+                            </div>
+                        </div>
+                        <div class="products-list row align-items-center">
+                            <div class="col-6 col">
+                                <div class="photo lazy" data-src="images/product-1.jpg">
+                                    <a href="#" class="bookmark d-block d-sm-none"></a>
+                                    <a href="bid-detail.html"></a>
+                                </div>
+                            </div>
+                            <div class="col-6 col">
+                                <h3><a href="bid-detail.html">Chloé C Mini leather shoulder bag</a></h3>
+                                <div class="countdown mb-2 ">
+                                    倒數<span class="h4 text-white bg-danger px-1">00</span>天<span class="h4 text-white bg-danger px-1">10</span>:<span class="h4 text-white bg-danger px-1">06</span>:<span class="h4 text-white bg-danger px-1">40</span>
+                                </div>
+                                <strong class="d-block d-sm-none">目前出價：＄23,800</strong>
+                                <strong class="d-block d-sm-none mb-3">實名認證賣家</strong>
+                                <a href="bid-detail.html" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
+                            </div>
+                            <div class="col text-center d-none d-sm-block">
+                                <small>目前出價</small>
+                                <strong class="d-block">＄23,800</strong>
+                            </div>
+                            <div class="col text-center d-none d-sm-block">
+                                <strong>實名認證賣家</strong>
+                            </div>
+                            <div class="col d-none d-sm-block">
+                                <a href="bid-detail.html" class="btn btn-outline-secondary btn-block rounded-0">我要競標</a>
                             </div>
                             <div class="col d-none d-sm-block">
                                 <a href="#" class="bookmark"></a>
@@ -783,17 +817,17 @@
                             <div class="col-6 col">
                                 <div class="photo lazy" data-src="images/product-2.jpg">
                                     <a href="#" class="bookmark d-block d-sm-none"></a>
-                                    <a href="#"></a>
+                                    <a href="bid-detail.html"></a>
                                 </div>
                             </div>
                             <div class="col-6 col">
-                                <h3><a href="products-detail.html">Chloé C Mini leather shoulder bag</a></h3>
+                                <h3><a href="bid-detail.html">Chloé C Mini leather shoulder bag</a></h3>
                                 <div class="countdown mb-2">
                                     倒數<span class="h4 text-success bg-light px-1"><span class="text-black-30">00</span></span>天<span class="h4 text-success bg-light px-1">10</span>:<span class="h4 text-success bg-light px-1"><span class="text-black-30">0</span>6</span>:<span class="h4 text-success bg-light px-1">40</span>
                                 </div>
                                 <strong class="d-block d-sm-none">目前出價：＄23,800</strong>
                                 <strong class="d-block d-sm-none mb-3">實名認證賣家</strong>
-                                <a href="#" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
+                                <a href="bid-detail.html" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
                             </div>
                             <div class="col text-center d-none d-sm-block">
                                 <small>目前出價</small>
@@ -803,7 +837,7 @@
                                 <strong>實名認證賣家</strong>
                             </div>
                             <div class="col d-none d-sm-block">
-                                <a href="#" class="btn btn-outline-secondary btn-block rounded-0">我要競標</a>
+                                <a href="bid-detail.html" class="btn btn-outline-secondary btn-block rounded-0">我要競標</a>
                             </div>
                             <div class="col d-none d-sm-block">
                                 <a href="#" class="bookmark"></a>
@@ -814,17 +848,17 @@
                             <div class="col-6 col">
                                 <div class="photo lazy" data-src="images/product-3.jpg">
                                     <a href="#" class="bookmark d-block d-sm-none"></a>
-                                    <a href="#"></a>
+                                    <a href="bid-detail.html"></a>
                                 </div>
                             </div>
                             <div class="col-6 col">
-                                <h3><a href="products-detail.html">Chloé C Mini leather shoulder bag</a></h3>
+                                <h3><a href="bid-detail.html">Chloé C Mini leather shoulder bag</a></h3>
                                 <div class="countdown mb-2">
                                     倒數<span class="h4 text-success bg-light px-1"><span class="text-black-30">00</span></span>天<span class="h4 text-success bg-light px-1">10</span>:<span class="h4 text-success bg-light px-1"><span class="text-black-30">0</span>6</span>:<span class="h4 text-success bg-light px-1">40</span>
                                 </div>
                                 <strong class="d-block d-sm-none">目前出價：＄23,800</strong>
                                 <strong class="d-block d-sm-none mb-3">實名認證賣家</strong>
-                                <a href="#" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
+                                <a href="bid-detail.html" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
                             </div>
                             <div class="col text-center d-none d-sm-block">
                                 <small>目前出價</small>
@@ -834,7 +868,7 @@
                                 <strong>實名認證賣家</strong>
                             </div>
                             <div class="col d-none d-sm-block">
-                                <a href="#" class="btn btn-outline-secondary btn-block rounded-0">我要競標</a>
+                                <a href="bid-detail.html" class="btn btn-outline-secondary btn-block rounded-0">我要競標</a>
                             </div>
                             <div class="col d-none d-sm-block">
                                 <a href="#" class="bookmark"></a>
@@ -849,13 +883,13 @@
                                 </div>
                             </div>
                             <div class="col-6 col">
-                                <h3><a href="products-detail.html">Chloé C Mini leather shoulder bag</a></h3>
+                                <h3><a href="bid-detail.html">Chloé C Mini leather shoulder bag</a></h3>
                                 <div class="countdown mb-2">
                                     倒數<span class="h4 text-success bg-light px-1"><span class="text-black-30">00</span></span>天<span class="h4 text-success bg-light px-1">10</span>:<span class="h4 text-success bg-light px-1"><span class="text-black-30">0</span>6</span>:<span class="h4 text-success bg-light px-1">40</span>
                                 </div>
                                 <strong class="d-block d-sm-none">目前出價：＄23,800</strong>
                                 <strong class="d-block d-sm-none mb-3">實名認證賣家</strong>
-                                <a href="#" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
+                                <a href="bid-detail.html" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
                             </div>
                             <div class="col text-center d-none d-sm-block">
                                 <small>目前出價</small>
@@ -868,7 +902,7 @@
                                 <a href="#" class="btn btn-outline-secondary btn-block rounded-0">我要競標</a>
                             </div>
                             <div class="col d-none d-sm-block">
-                                <a href="#" class="bookmark"></a>
+                                <a href="bid-detail.html" class="bookmark"></a>
                             </div>
                         </div>
                         <hr class="my-4">
@@ -876,17 +910,17 @@
                             <div class="col-6 col">
                                 <div class="photo lazy" data-src="images/product-1.jpg">
                                     <a href="#" class="bookmark d-block d-sm-none"></a>
-                                    <a href="#"></a>
+                                    <a href="bid-detail.html"></a>
                                 </div>
                             </div>
                             <div class="col-6 col">
-                                <h3><a href="products-detail.html">Chloé C Mini leather shoulder bag</a></h3>
+                                <h3><a href="bid-detail.html">Chloé C Mini leather shoulder bag</a></h3>
                                 <div class="countdown mb-2">
                                     倒數<span class="h4 text-success bg-light px-1"><span class="text-black-30">00</span></span>天<span class="h4 text-success bg-light px-1">10</span>:<span class="h4 text-success bg-light px-1"><span class="text-black-30">0</span>6</span>:<span class="h4 text-success bg-light px-1">40</span>
                                 </div>
                                 <strong class="d-block d-sm-none">目前出價：＄23,800</strong>
                                 <strong class="d-block d-sm-none mb-3">實名認證賣家</strong>
-                                <a href="#" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
+                                <a href="bid-detail.html" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
                             </div>
                             <div class="col text-center d-none d-sm-block">
                                 <small>目前出價</small>
@@ -896,7 +930,7 @@
                                 <strong>實名認證賣家</strong>
                             </div>
                             <div class="col d-none d-sm-block">
-                                <a href="#" class="btn btn-outline-secondary btn-block rounded-0">我要競標</a>
+                                <a href="bid-detail.html" class="btn btn-outline-secondary btn-block rounded-0">我要競標</a>
                             </div>
                             <div class="col d-none d-sm-block">
                                 <a href="#" class="bookmark"></a>
@@ -907,17 +941,17 @@
                             <div class="col-6 col">
                                 <div class="photo lazy" data-src="images/product-2.jpg">
                                     <a href="#" class="bookmark d-block d-sm-none"></a>
-                                    <a href="#"></a>
+                                    <a href="bid-detail.html"></a>
                                 </div>
                             </div>
                             <div class="col-6 col">
-                                <h3><a href="products-detail.html">Chloé C Mini leather shoulder bag</a></h3>
+                                <h3><a href="bid-detail.html">Chloé C Mini leather shoulder bag</a></h3>
                                 <div class="countdown mb-2">
                                     倒數<span class="h4 text-success bg-light px-1"><span class="text-black-30">00</span></span>天<span class="h4 text-success bg-light px-1">10</span>:<span class="h4 text-success bg-light px-1"><span class="text-black-30">0</span>6</span>:<span class="h4 text-success bg-light px-1">40</span>
                                 </div>
                                 <strong class="d-block d-sm-none">目前出價：＄23,800</strong>
                                 <strong class="d-block d-sm-none mb-3">實名認證賣家</strong>
-                                <a href="#" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
+                                <a href="bid-detail.html" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
                             </div>
                             <div class="col text-center d-none d-sm-block">
                                 <small>目前出價</small>
@@ -930,7 +964,7 @@
                                 <a href="#" class="btn btn-outline-secondary btn-block rounded-0">我要競標</a>
                             </div>
                             <div class="col d-none d-sm-block">
-                                <a href="#" class="bookmark"></a>
+                                <a href="bid-detail.html" class="bookmark"></a>
                             </div>
                         </div>
                         <hr class="my-4">
@@ -938,17 +972,17 @@
                             <div class="col-6 col">
                                 <div class="photo lazy" data-src="images/product-3.jpg">
                                     <a href="#" class="bookmark d-block d-sm-none"></a>
-                                    <a href="#"></a>
+                                    <a href="bid-detail.html"></a>
                                 </div>
                             </div>
                             <div class="col-6 col">
-                                <h3><a href="products-detail.html">Chloé C Mini leather shoulder bag</a></h3>
+                                <h3><a href="bid-detail.html">Chloé C Mini leather shoulder bag</a></h3>
                                 <div class="countdown mb-2">
                                     倒數<span class="h4 text-success bg-light px-1"><span class="text-black-30">00</span></span>天<span class="h4 text-success bg-light px-1">10</span>:<span class="h4 text-success bg-light px-1"><span class="text-black-30">0</span>6</span>:<span class="h4 text-success bg-light px-1">40</span>
                                 </div>
                                 <strong class="d-block d-sm-none">目前出價：＄23,800</strong>
                                 <strong class="d-block d-sm-none mb-3">實名認證賣家</strong>
-                                <a href="#" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
+                                <a href="bid-detail.html" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
                             </div>
                             <div class="col text-center d-none d-sm-block">
                                 <small>目前出價</small>
@@ -961,7 +995,7 @@
                                 <a href="#" class="btn btn-outline-secondary btn-block rounded-0">我要競標</a>
                             </div>
                             <div class="col d-none d-sm-block">
-                                <a href="#" class="bookmark"></a>
+                                <a href="bid-detail.html" class="bookmark"></a>
                             </div>
                         </div>
                         <hr class="my-4">
@@ -972,13 +1006,13 @@
                                 </div>
                             </div>
                             <div class="col-6 col">
-                                <h3><a href="products-detail.html">Chloé C Mini leather shoulder bag</a></h3>
+                                <h3><a href="bid-detail.html">Chloé C Mini leather shoulder bag</a></h3>
                                 <div class="countdown mb-2">
                                     倒數<span class="h4 text-success bg-light px-1"><span class="text-black-30">00</span></span>天<span class="h4 text-success bg-light px-1">10</span>:<span class="h4 text-success bg-light px-1"><span class="text-black-30">0</span>6</span>:<span class="h4 text-success bg-light px-1">40</span>
                                 </div>
                                 <strong class="d-block d-sm-none">目前出價：＄23,800</strong>
                                 <strong class="d-block d-sm-none mb-3">實名認證賣家</strong>
-                                <a href="#" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
+                                <a href="bid-detail.html" class="btn btn-outline-secondary btn-block rounded-0 d-block d-sm-none">我要競標</a>
                             </div>
                             <div class="col text-center d-none d-sm-block">
                                 <small>目前出價</small>
@@ -991,7 +1025,7 @@
                                 <a href="#" class="btn btn-outline-secondary btn-block rounded-0">我要競標</a>
                             </div>
                             <div class="col d-none d-sm-block">
-                                <a href="#" class="bookmark"></a>
+                                <a href="bid-detail.html" class="bookmark"></a>
                             </div>
                         </div>
                         <nav aria-label="Page navigation example">
