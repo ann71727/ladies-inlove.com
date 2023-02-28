@@ -20,8 +20,10 @@ a {
     color: #3E3A39;
 }
 
-a:hover {
-    color: #4C417A;
+a:hover,
+a.active {
+    color: #4C417A !important;
+    font-weight: 600;
     text-decoration: none !important;
 }
 
@@ -1384,7 +1386,11 @@ footer .ul-w-50 {
 
 .sidebar .beefup__body a:hover {
     background-color: #F6F6F6;
-    color: #3E3A39;
+    color: #4C417A;
+}
+
+.sidebar .beefup__body a.active {
+    color: #4C417A;
 }
 
 /* .main {
