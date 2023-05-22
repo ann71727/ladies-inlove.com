@@ -2194,7 +2194,10 @@ form .table {
 .seller-center .navbar-text {
     display: block;
     float: right;
+    padding-left: 10%;
 }
+
+
 
 .seller-center .v-navbar .container-fluid {
     display: flex;
@@ -2871,6 +2874,7 @@ VECTOR
     }
 }
 
+
 @media only screen and (max-width: 576px) {
     .wrapper {
         padding-top: 48px;
@@ -2922,6 +2926,7 @@ VECTOR
         width: 200px;
         background-color: #2d1f52;
         padding-bottom: 130px;
+        padding-top: 2em;
     }
 
     .menu-container .dropdown-heading,
@@ -3512,8 +3517,24 @@ VECTOR
     cursor: not-allowed !important;
 }
 
-
-
+/* 230502 更新 */
+/* 手機版 footer */
+.footer-menu{
+    width: 100% !important;
+}
+@media all and (max-width: 767.98px) {
+    .seller-center .navbar-text {
+        padding-left: 10%;
+    }
+}
+@media all and (max-width: 767.98px) {
+    .menu-container {
+        padding-top: 2em;
+    }
+}
+.seller-center ~ #v_chat_frame {
+    bottom: 0 !important;
+}
 
 
 
